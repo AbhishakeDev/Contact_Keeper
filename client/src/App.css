@@ -40,13 +40,48 @@ img {
   width: 100%;
 }
 
+.footer{
+  width: 100%;
+  background-color: #003599;
+  color: #fff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.copyright{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.social-media{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 25px;
+}
+.social-media i{
+  margin-right: 40px;
+}
+
 /* Utilities */
 .container {
-  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 90vh;
   margin: auto;
-  overflow: hidden;
+  max-width: 1100px;
   padding: 0 2rem;
 }
+
+
 
 /* Text Styles*/
 .x-large {
@@ -239,6 +274,11 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: #333;
 }
 
+/* .credit{
+  list-style-type: none;
+  transform: translateX(-50%);
+} */
+
 .btn-primary,
 .bg-primary,
 .badge-primary,
@@ -353,6 +393,8 @@ button {
 
 .form-container {
   max-width: 500px;
+  width: 400px;
+  height: 400px;
   margin: 2rem auto;
   overflow: hidden;
   padding: 0 2rem;
@@ -458,5 +500,32 @@ table th {
   .navbar ul {
     text-align: center;
     justify-content: center;
+  }
+
+  .container{
+    height: calc(90vh - 35px);
+  }
+
+  .footer{
+    height: auto;
+    padding-bottom:10px ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .copyright{
+    font-size: 13px;
+    text-align: center;
+  }
+  .social-media{
+    font-size: 15px;
+  }
+  .social-media i{
+    margin-right: 15px;
+  }
+  .form-container{
+    width: auto;
+    height: auto;
   }
 }
