@@ -29,6 +29,7 @@ const Navbar = ({ title, icon }) => {
 
     const guestLinks = (
         <Fragment>
+
             <li>
                 <Link to='/register'>Register</Link>
             </li>
@@ -43,6 +44,9 @@ const Navbar = ({ title, icon }) => {
             <h1>
                 <i className={icon} />  {title}
             </h1>
+            <li style={{ listStyleType: 'none', transform: 'translateX(-50%)' }}>
+                Created By ::  Abhishek
+            </li>
             <ul>
                 {isAuthenticated ? authLinks : guestLinks}
             </ul>
