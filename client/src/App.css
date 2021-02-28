@@ -393,10 +393,9 @@ button {
 
 .form-container {
   max-width: 500px;
-  width: 400px;
-  height: 600px;
   margin: 2rem auto;
   overflow: hidden;
+  width: 400px;
   padding: 0 2rem;
 }
 
@@ -502,16 +501,10 @@ table th {
     justify-content: center;
   }
 
-  .container{
-    height: calc(90vh - 35px);
-  }
-
   .footer{
     height: auto;
     padding-bottom:10px ;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
   }
 
   .copyright{
@@ -526,6 +519,8 @@ table th {
   }
   .form-container{
     width: auto;
-    height: auto;
+  }
+  .container{
+    height: 700px;
   }
 }
