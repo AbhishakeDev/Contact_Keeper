@@ -40,33 +40,17 @@ img {
   width: 100%;
 }
 
-.footer{
-  width: 100%;
-  background-color: #003599;
-  color: #fff;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  padding-bottom: 10px;
+.social-media{
+  text-align: center;
 }
+
 
 .copyright{
-  font-size: 25px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
-.social-media{
-  width: 100%;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  font-size: 25px;
-}
 .social-media i{
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 /* Utilities */
@@ -74,14 +58,13 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  height: 90vh;
-  margin: auto;
+  align-items: center;
   max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
   padding: 0 2rem;
+  width: 100%;
 }
-
-
 
 /* Text Styles*/
 .x-large {
@@ -201,6 +184,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 /* Grid */
 .grid-2 {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
@@ -273,11 +257,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   background: var(--light-color);
   color: #333;
 }
-
-/* .credit{
-  list-style-type: none;
-  transform: translateX(-50%);
-} */
 
 .btn-primary,
 .bg-primary,
@@ -395,8 +374,8 @@ button {
   max-width: 500px;
   margin: 2rem auto;
   overflow: hidden;
-  width: 400px;
   padding: 0 2rem;
+  width: 400px;
 }
 
 .form-container h1,
@@ -413,6 +392,10 @@ table td {
 
 table th {
   background: var(--light-color);
+}
+
+.footer{
+  margin-top:30px;
 }
 
 /* Navbar */
@@ -500,27 +483,17 @@ table th {
     text-align: center;
     justify-content: center;
   }
-
-  .footer{
-    height: auto;
-    padding-bottom:10px ;
-
+  .form-container {
+    width: 300px;
   }
 
-  .copyright{
-    font-size: 13px;
-    text-align: center;
+  .form-container h1{
+    font-size: 25px;
   }
-  .social-media{
-    font-size: 15px;
-  }
-  .social-media i{
-    margin-right: 15px;
-  }
-  .form-container{
+}
+
+@media (max-width:400px){
+  .form-container {
     width: auto;
-  }
-  .container{
-    height: 700px;
   }
 }
