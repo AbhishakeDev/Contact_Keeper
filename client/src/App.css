@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 /* Global Styles */
 :root {
   --primary-color: #003699;
@@ -16,10 +16,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Baloo Chettan 2', cursive;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #a7c5eb;
   color: #333;
 }
 
@@ -93,9 +93,15 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
-  margin: 0.7rem 0;
+  margin: .7rem 0;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
 
 /* List */
 .list {
@@ -194,6 +200,8 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  border-radius: 5px;
+  margin: 3px;
 }
 
 .btn-link {
@@ -313,8 +321,21 @@ textarea {
   display: block;
   width: 100%;
   padding: 0.4rem;
-  font-size: 1.2rem;
-  border: 1px solid #ccc;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='date']:focus,
+select:focus,
+textarea:focus{
+  box-shadow: 1px 1px 20px 1px #000;
+
 }
 
 input[type='submit'],
