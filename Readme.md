@@ -1,5 +1,5 @@
 # Link to the deployed version of the website
-Open  [https://sleepy-plateau-72918.herokuapp.com/login#](28. https://sleepy-plateau-72918.herokuapp.com/login#)
+Open  [https://sleepy-plateau-72918.herokuapp.com/login#](https://sleepy-plateau-72918.herokuapp.com/login#)
 
 # Contact Keeper
 
